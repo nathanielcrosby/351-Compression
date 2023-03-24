@@ -1,4 +1,5 @@
 import pickle
+import sys
 
 ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!"#$%&()*+,-./:;<>=?@[]\^_`}{|~ ' + "'" + "\n"
 
@@ -6,7 +7,11 @@ ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM123456789
 def read_text(files):
     all_text = ""
     for file in files:
-        all_text += open(file,'r', encoding="utf8").read()
+        try:
+            all_text += open(file,'r', encoding="utf8").read()
+        except FileNotFoundError:
+            print("No file found with name: ", file)
+            print("Ensure correct arguments. Input: python huffCode.py file1 file2 ...")
 
     return all_text
 
@@ -61,12 +66,13 @@ def Huffman(A, P, D=2):
         C[b_star[i]] = C_star[b_star] + str(i)
 
     return C
-    
-
 
 
 if __name__ == "__main__":
-    text = read_text(['books/ulysses.txt'])
+    if(len(sys.argv) < 2):
+        print("Incorrect number of arguments. Input: python huffCode.py file1 file2 ...")
+
+    text = read_text(sys.argv[1:])
     freqs = find_freq(text)
     sorted_freqs = dict_sort(freqs)
     

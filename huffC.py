@@ -27,11 +27,9 @@ if __name__ == '__main__':
 
         value = encode(code, data)
 
-        print(len(value))
-
         vals = []
         for i in range(0, len(value), 8):
-            if (i < (len(value) - 8)):
+            if (i < (len(value) - 7)):
                 vals.append(int(value[i:i+8], 2))
             else:
                 vals.append(int(value[i:], 2) * (2 ** (8 - (len(value) % 8))))
