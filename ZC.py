@@ -11,6 +11,8 @@ def encode(data):
         codes[char] = str(format(counter, 'b')).zfill(len_code)
         counter += 1
 
+    ascii = codes.copy()
+
     clean_data = ""
     for ch in data:
         if codes.get(ch) is not None:
@@ -29,20 +31,26 @@ def encode(data):
         
         value += codes[data[i:j]].zfill(len_code) 
         
-        if (counter < 2**16):
+        if (counter < 2**16) and (j < len(data)):
             value += codes[data[j]].zfill(len_code)
             codes[data[i:j+1]] = str(format(counter, 'b')).zfill(len_code)
 
-            comp_ratio = 0.01 * ((2 * len_code) / (8*len(data[i:j+1]))) + (0.99 * comp_ratio)
+            comp_ratio = 0.001 * ((2 * len_code) / (8*len(data[i:j+1]))) + (0.999 * comp_ratio)
 
             if '0' not in str(format(counter, 'b')).zfill(len_code) and (len_code < 16):
                 len_code += 1
 
             counter += 1
             i = j + 1
-        else:
 
+        else:
+            comp_ratio = 0.001 * ((len_code) / (8*len(data[i:j]))) + (0.999 * comp_ratio)
             i=j
+            
+            if (comp_ratio > 0.8):
+                codes = ascii.copy()
+                counter = len(ascii_printable)
+                len_code = 9
 
     return value
 

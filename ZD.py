@@ -19,25 +19,37 @@ def decode(data):
         codes[str(format(counter, 'b')).zfill(len_code)] = char
         counter += 1
 
+    ascii = codes.copy()
+    comp_ratio = 1
+
     i = 0
     while i < (len(data) - len_code):
         left = codes[data[i:i+len_code]]
         message += left
         i += len_code
 
-        if (i + len_code) <= len(data):
+        if (i + len_code) <= len(data) and (counter < 2**16):
             right = codes[data[i:i+len_code]]
             message += right
             i += len_code
 
-            if counter < 2**16:
-                codes[str(format(counter, 'b')).zfill(len_code)] = left + right
-                
-                if ('0' not in str(format(counter, 'b')).zfill(len_code)) and (len_code < 16):
-                    len_code += 1
-                    codes = longer_codes(codes, len_code)
+            codes[str(format(counter, 'b')).zfill(len_code)] = left + right
 
-                counter += 1
+            comp_ratio = 0.001 * ((2 * len_code) / (8*len(left+right))) + (0.999 * comp_ratio)
+
+            if ('0' not in str(format(counter, 'b')).zfill(len_code)) and (len_code < 16):
+                len_code += 1
+                codes = longer_codes(codes, len_code)
+
+            counter += 1
+
+        else:
+            comp_ratio = 0.001 * ((len_code) / (8*len(left))) + (0.999 * comp_ratio)
+
+            if (comp_ratio > 0.8):
+                codes = ascii.copy()
+                counter = len(ascii_printable)
+                len_code = 9
 
     return message
 
