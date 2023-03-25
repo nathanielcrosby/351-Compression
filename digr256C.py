@@ -19,6 +19,16 @@ def encode(code, data):
 
     return value
 
+def str_to_list(value):
+    vals = []
+    for i in range(0, len(value), 8):
+        if (i < (len(value) - 7)):
+            vals.append(int(value[i:i+8], 2))
+        else:
+            vals.append(int(value[i:], 2) * (2 ** (8 - (len(value) % 8))))
+
+    return vals
+
 if __name__ == '__main__':
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python digr256C.py filename")
@@ -36,15 +46,7 @@ if __name__ == '__main__':
             code = pickle.load(f)
 
         value = encode(code, data)
-
-        vals = []
-        for i in range(0, len(value), 8):
-            if (i < (len(value) - 7)):
-                vals.append(int(value[i:i+8], 2))
-            else:
-                vals.append(int(value[i:], 2) * (2 ** (8 - (len(value) % 8))))
-
-       #print(vals)
+        vals = str_to_list(value)
 
         with open(filename+'.digr256', 'wb') as f:
             f.write(bytearray(vals))
