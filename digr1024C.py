@@ -19,6 +19,7 @@ def encode(code, data):
 
     return value
 
+
 def str_to_list(value):
     vals = []
     for i in range(0, len(value), 8):

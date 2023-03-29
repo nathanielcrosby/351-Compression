@@ -47,6 +47,6 @@ if __name__ == '__main__':
 
         value = encode(code, data)
         vals = str_to_list(value)
-        
+
         with open(filename+'.digr512', 'wb') as f:
             f.write(bytearray(vals))
