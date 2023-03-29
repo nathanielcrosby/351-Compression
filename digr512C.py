@@ -29,6 +29,17 @@ def str_to_list(value):
 
     return vals
 
+def split_vals_in_list(vals):
+    new_vals = []
+    for num in vals:     
+        a = num % 256
+        new_vals.append(a)
+        b = num - a
+        new_vals.append(b % 255)
+        new_vals.append(b - (b % 255))
+
+    return new_vals
+
 if __name__ == '__main__':
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python digr512C.py filename")
@@ -46,7 +57,9 @@ if __name__ == '__main__':
             code = pickle.load(f)
 
         value = encode(code, data)
-        #vals = str_to_list(value)
-        
-        with open(filename+'.digr512', 'w') as f:
-            f.write(value)
+        vals = str_to_list(value)
+        new_vals = split_vals_in_list(vals)
+
+
+        with open(filename+'.digr512', 'wb') as f:
+            f.write(bytearray(new_vals))

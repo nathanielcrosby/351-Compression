@@ -8,6 +8,12 @@ def decode(code, data):
 
     return message
 
+def rejoin_vals(vals):
+    new_vals = []
+    for i in range(0, len(vals), 3):
+        new_vals.append(vals[i] + vals[i + 1] + vals[i + 2])
+    return new_vals
+
 if __name__ == '__main__':
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python digr512D.py filename")
@@ -15,7 +21,7 @@ if __name__ == '__main__':
     else:
         filename = sys.argv[1]
         try:
-            my_file = open(filename, 'r')
+            my_file = open(filename, 'rb')
             data = my_file.read()
         except FileNotFoundError:
             print("No file found with name: ", filename)
@@ -24,13 +30,13 @@ if __name__ == '__main__':
         with open('digram_code512.pkl', 'rb') as f:
             code = pickle.load(f)
 
-        #nums = list(bytearray(data))
+        nums = rejoin_vals(list(bytearray(data)))
 
-        #vals = []
-        #for num in nums:
-        #    vals.append('{0:09b}'.format(num))
+        vals = []
+        for num in nums:
+            vals.append('{0:09b}'.format(num))
 
-        #data = "".join(vals)
+        data = "".join(vals)
 
         inv_code = {v: k for k, v in code.items()}
 
