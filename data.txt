@@ -575,3 +575,42 @@ Compression Ratio: 1.8911613268337142
 Decompression time: 3.1250226497650146 seconds
 
 total.txt:
+Compression time: 160.98463010787964 seconds
+Original file size (in terms of bytes): 12631052
+Compressed file size (in terms of bytes): 6797478
+Compression Ratio: 1.8581968194674554
+Decompression time: 24.702547550201416 seconds
+
+two_cities.txt:
+Compression time: 0.6318073272705078 seconds
+Original file size (in terms of bytes): 807231
+Compressed file size (in terms of bytes): 431286
+Compression Ratio: 1.8716837550952268
+Decompression time: 1.326481580734253 seconds
+
+ulysses.txt:
+Compression time: 1.061436653137207 seconds
+Original file size (in terms of bytes): 1586336
+Compressed file size (in terms of bytes): 882759
+Compression Ratio: 1.7970204778427634
+Decompression time: 3.616225242614746 seconds
+
+winnie_the_pooh.txt:
+Compression time: 0.22158169746398926 seconds
+Original file size (in terms of bytes): 151960
+Compressed file size (in terms of bytes): 87110
+Compression Ratio: 1.7444610262886007
+Decompression time: 0.4252798557281494 seconds
+
+
+
+
+digr256:
+all_concatenated_books.txt:
+Compression time: 164.06885862350464 seconds
+Original file size (in terms of bytes): 12631051
+Compressed file size (in terms of bytes): 6925422
+Compression Ratio: 1.8238673397808827
+Decompression time: 11.049530267715454 seconds
+
+anna_karenina.txt:

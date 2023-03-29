@@ -28,7 +28,7 @@ if __name__ == '__main__':
                     os.system(cmd)
                 else:
                     size = algorithm[4:len(algorithm)]
-                    cmd = "python " + algorithm + "Code.py" + " " + size + " " + book
+                    cmd = "python " + algorithm[0:4] + "Code.py" + " " + size + " " + book
                     os.system(cmd)
 
             cmd="python " + algorithm + "C.py" + " " + book
