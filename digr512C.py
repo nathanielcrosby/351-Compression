@@ -21,11 +21,11 @@ def encode(code, data):
 
 def str_to_list(value):
     vals = []
-    for i in range(0, len(value), 9):
-        if (i < (len(value) - 8)):
-            vals.append(int(value[i:i+9], 2))
+    for i in range(0, len(value), 8):
+        if (i < (len(value) - 7)):
+            vals.append(int(value[i:i+8], 2))
         else:
-            vals.append(int(value[i:], 2) * (2 ** (9 - (len(value) % 9))))
+            vals.append(int(value[i:], 2) * (2 ** (8 - (len(value) % 8))))
 
     return vals
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
             code = pickle.load(f)
 
         value = encode(code, data)
-        #vals = str_to_list(value)
+        vals = str_to_list(value)
         
-        with open(filename+'.digr512', 'w') as f:
-            f.write(value)
+        with open(filename+'.digr512', 'wb') as f:
+            f.write(bytearray(vals))
