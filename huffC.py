@@ -1,6 +1,5 @@
 import pickle
 import sys
-import time
 
 def encode(code, data):
     value = ""
@@ -23,7 +22,6 @@ def str_to_list(value):
 
 
 if __name__ == '__main__':
-    start = time.perf_counter()
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python huffC.py filename")
 
@@ -45,6 +43,3 @@ if __name__ == '__main__':
 
         with open(filename+'.huff', 'wb') as f:
             f.write(bytearray(vals))
-
-        print(time.perf_counter() - start)
-        print(len(value) / (len(data)*8))
