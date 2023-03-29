@@ -1,11 +1,12 @@
 import pickle
 import sys
+import time
 
 def encode(code, data):
     value = ""
     i = 0
     while i < len(data):
-        if i == (len(data) - 1):
+        if (i == (len(data) - 1)) and (code.get(data[i]) is not None):
             value += code[data[i]]
             i += 1
         elif code.get(data[i:i+2]) is not None:
@@ -30,6 +31,7 @@ def str_to_list(value):
     return vals
 
 if __name__ == '__main__':
+    start = time.perf_counter()
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python digr256C.py filename")
 
@@ -50,3 +52,6 @@ if __name__ == '__main__':
 
         with open(filename+'.digr256', 'wb') as f:
             f.write(bytearray(vals))
+
+        print(time.perf_counter() - start)
+        print(len(value) / (len(data)*8))

@@ -1,5 +1,7 @@
 import pickle
 import sys
+import time
+
 
 ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!"#$%&()*+,-./:;<>=?@[]\^_`}{|~ ' + "'" + "\n"
 
@@ -55,6 +57,7 @@ def decode(data):
 
 
 if __name__ == '__main__':
+    start = time.perf_counter()
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python ZD.py filename")
 
@@ -78,3 +81,5 @@ if __name__ == '__main__':
 
         with open(filename+'.txt', 'w') as f:
             f.write(message)
+
+        print(time.perf_counter() - start)

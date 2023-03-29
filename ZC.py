@@ -1,5 +1,7 @@
 import pickle
 import sys
+import time
+
 
 ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!"#$%&()*+,-./:;<>=?@[]\^_`}{|~ ' + "'" + "\n"
 
@@ -67,6 +69,7 @@ def str_to_list(value):
 
 
 if __name__ == '__main__':
+    start = time.perf_counter()
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python ZC.py filename")
 
@@ -84,3 +87,6 @@ if __name__ == '__main__':
 
         with open(filename+'.Z', 'wb') as f:
             f.write(bytearray(vals))
+
+        print(time.perf_counter() - start)
+        print(len(value) / (len(data)*8))

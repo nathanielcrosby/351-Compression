@@ -64,7 +64,6 @@ def can_cast(val):
 
 
 if __name__ == "__main__":
-    print(sys.argv)
     if(len(sys.argv) < 3):
         print("Incorrect number of arguments. Input: python digrCode.py size file1 file2 ...")
     elif (can_cast(sys.argv[1])) or (int(sys.argv[1]) < 96):

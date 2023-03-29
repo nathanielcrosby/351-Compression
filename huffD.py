@@ -1,5 +1,6 @@
 import pickle
 import sys
+import time
 
 def decode(code, data):
     i, j = 0, 1
@@ -14,6 +15,7 @@ def decode(code, data):
     return message
 
 if __name__ == '__main__':
+    start = time.perf_counter()
     if(len(sys.argv) != 2):
         print("Incorrect number of arguments. Input: python huffD.py filename")
 
@@ -43,3 +45,5 @@ if __name__ == '__main__':
 
         with open(filename+'.txt', 'w') as f:
             f.write(message)
+
+        print(time.perf_counter() - start)
