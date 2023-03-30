@@ -1,616 +1,435 @@
 huff:
-all_concatenated_books.txt:
-Compression time: 109.31484866142273 seconds
-Compressed file size: 6797478 bytes
-Original file size: 12631051 bytes
-Compression Ratio: 0.5381561676854919
-Decompression time: 21.42588520050049 seconds
-
 anna_karenina.txt:
-Compression time: 3.1088786125183105 seconds
-Compressed file size: 1092803 bytes
+Compression time: 3.4690213203430176 seconds
+Compressed file size: 1093797 bytes
 Original file size: 2067704 bytes
-Compression Ratio: 0.528510367054472
-Decompression time: 2.8291683197021484 seconds
+Compression Ratio: 0.5289910935027451
+Decompression time: 3.7456624507904053 seconds
 
 don_quixote.txt:
-Compression time: 4.14981484413147 seconds
-Compressed file size: 1285861 bytes
+Compression time: 5.2478508949279785 seconds
+Compressed file size: 1288663 bytes
 Original file size: 2391508 bytes
-Compression Ratio: 0.5376779003039087
-Decompression time: 3.417954444885254 seconds
+Compression Ratio: 0.5388495459768481
+Decompression time: 4.23311185836792 seconds
 
 dorian_gray.txt:
-Compression time: 0.3436605930328369 seconds
-Compressed file size: 249607 bytes
+Compression time: 0.48221683502197266 seconds
+Compressed file size: 250013 bytes
 Original file size: 465592 bytes
-Compression Ratio: 0.5361067200467362
-Decompression time: 0.7241578102111816 seconds
+Compression Ratio: 0.5369787281568412
+Decompression time: 0.8536314964294434 seconds
 
 great_gatsby.txt:
-Compression time: 0.23163437843322754 seconds
-Compressed file size: 161429 bytes
+Compression time: 0.262103796005249 seconds
+Compressed file size: 162202 bytes
 Original file size: 306227 bytes
-Compression Ratio: 0.527154692434044
-Decompression time: 0.5372529029846191 seconds
+Compression Ratio: 0.5296789636446165
+Decompression time: 0.5800538063049316 seconds
 
 huckleberry_finn.txt:
-Compression time: 0.5636813640594482 seconds
-Compressed file size: 325733 bytes
+Compression time: 0.5603549480438232 seconds
+Compressed file size: 327525 bytes
 Original file size: 622257 bytes
-Compression Ratio: 0.5234702060402695
-Decompression time: 0.9412047863006592 seconds
+Compression Ratio: 0.5263500450778376
+Decompression time: 1.0696907043457031 seconds
 
 metamorphosis.txt:
-Compression time: 0.14952588081359863 seconds
-Compressed file size: 76178 bytes
+Compression time: 0.15113162994384766 seconds
+Compressed file size: 76450 bytes
 Original file size: 142017 bytes
-Compression Ratio: 0.5364005717625354
-Decompression time: 0.2722916603088379 seconds
+Compression Ratio: 0.538315835428153
+Decompression time: 0.33166003227233887 seconds
 
 moby_dick.txt:
-Compression time: 1.436751127243042 seconds
-Compressed file size: 689885 bytes
+Compression time: 1.6850981712341309 seconds
+Compressed file size: 690762 bytes
 Original file size: 1276235 bytes
-Compression Ratio: 0.5405626706680196
-Decompression time: 1.808645248413086 seconds
+Compression Ratio: 0.5412498481862666
+Decompression time: 2.21647572517395 seconds
 
 pride_and_prejudice.txt:
-Compression time: 0.6487693786621094 seconds
-Compressed file size: 416847 bytes
+Compression time: 0.7659173011779785 seconds
+Compressed file size: 417635 bytes
 Original file size: 772186 bytes
-Compression Ratio: 0.5398271918941809
-Decompression time: 1.107231616973877 seconds
+Compression Ratio: 0.5408476714159541
+Decompression time: 1.3542215824127197 seconds
 
 the_brothers_karamazov.txt:
-Compression time: 2.9886529445648193 seconds
-Compressed file size: 1079653 bytes
+Compression time: 3.760239839553833 seconds
+Compressed file size: 1081322 bytes
 Original file size: 2041798 bytes
-Compression Ratio: 0.5287756183520603
-Decompression time: 2.8419277667999268 seconds
-
-total.txt:
-Compression time: 106.41483974456787 seconds
-Compressed file size: 6797477 bytes
-Original file size: 12631049 bytes
-Compression Ratio: 0.5381561737271385
-Decompression time: 21.293930768966675 seconds
+Compression Ratio: 0.5295930351582282
+Decompression time: 3.4489192962646484 seconds
 
 two_cities.txt:
-Compression time: 0.69281005859375 seconds
-Compressed file size: 431286 bytes
+Compression time: 0.8081884384155273 seconds
+Compressed file size: 431789 bytes
 Original file size: 807231 bytes
-Compression Ratio: 0.5342782920873951
-Decompression time: 1.1544623374938965 seconds
+Compression Ratio: 0.5349014098814342
+Decompression time: 1.4668617248535156 seconds
 
 ulysses.txt:
-Compression time: 2.1433072090148926 seconds
-Compressed file size: 882759 bytes
+Compression time: 2.6226327419281006 seconds
+Compressed file size: 886688 bytes
 Original file size: 1586336 bytes
-Compression Ratio: 0.5564766858975652
-Decompression time: 2.2511913776397705 seconds
+Compression Ratio: 0.5589534625703508
+Decompression time: 2.8256139755249023 seconds
 
 winnie_the_pooh.txt:
-Compression time: 0.14862704277038574 seconds
-Compressed file size: 87110 bytes
+Compression time: 0.1766831874847412 seconds
+Compressed file size: 90663 bytes
 Original file size: 151960 bytes
-Compression Ratio: 0.5732429586733351
-Decompression time: 0.3016185760498047 seconds
+Compression Ratio: 0.596624111608318
+Decompression time: 0.3709597587585449 seconds
 
 
 
 digr256:
-all_concatenated_books.txt:
-Compression time: 110.84314775466919 seconds
-Compressed file size: 6930226 bytes
-Original file size: 12631051 bytes
-Compression Ratio: 0.548665823611986
-Decompression time: 9.013099670410156 seconds
-
 anna_karenina.txt:
-Compression time: 3.539577007293701 seconds
-Compressed file size: 1122252 bytes
+Compression time: 4.559996128082275 seconds
+Compressed file size: 1118488 bytes
 Original file size: 2067704 bytes
-Compression Ratio: 0.5427527344339422
-Decompression time: 0.9020881652832031 seconds
+Compression Ratio: 0.5409323578229766
+Decompression time: 1.2398784160614014 seconds
 
 don_quixote.txt:
-Compression time: 4.555056095123291 seconds
-Compressed file size: 1312767 bytes
+Compression time: 6.797369480133057 seconds
+Compressed file size: 1311902 bytes
 Original file size: 2391508 bytes
-Compression Ratio: 0.5489285421583369
-Decompression time: 1.1099488735198975 seconds
+Compression Ratio: 0.5485668456889963
+Decompression time: 1.4015600681304932 seconds
 
 dorian_gray.txt:
-Compression time: 0.4195718765258789 seconds
-Compressed file size: 253583 bytes
+Compression time: 0.5670392513275146 seconds
+Compressed file size: 253477 bytes
 Original file size: 465592 bytes
-Compression Ratio: 0.5446463856767298
-Decompression time: 0.2634286880493164 seconds
+Compression Ratio: 0.5444187185346827
+Decompression time: 0.34075403213500977 seconds
 
 great_gatsby.txt:
-Compression time: 0.28478074073791504 seconds
-Compressed file size: 164995 bytes
+Compression time: 0.31706833839416504 seconds
+Compressed file size: 165248 bytes
 Original file size: 306227 bytes
-Compression Ratio: 0.5387996486266724
-Decompression time: 0.20476150512695312 seconds
+Compression Ratio: 0.5396258331237938
+Decompression time: 0.239729642868042 seconds
 
 huckleberry_finn.txt:
-Compression time: 0.5790665149688721 seconds
-Compressed file size: 334258 bytes
+Compression time: 0.7270379066467285 seconds
+Compressed file size: 333944 bytes
 Original file size: 622257 bytes
-Compression Ratio: 0.5371703331581645
-Decompression time: 0.31653451919555664 seconds
+Compression Ratio: 0.5366657185053764
+Decompression time: 0.38056206703186035 seconds
 
 metamorphosis.txt:
-Compression time: 0.16517853736877441 seconds
-Compressed file size: 77880 bytes
+Compression time: 0.19377851486206055 seconds
+Compressed file size: 77798 bytes
 Original file size: 142017 bytes
-Compression Ratio: 0.5483850524937155
-Decompression time: 0.14014935493469238 seconds
+Compression Ratio: 0.5478076568298161
+Decompression time: 0.1816720962524414 seconds
 
 moby_dick.txt:
-Compression time: 1.7187306880950928 seconds
-Compressed file size: 708543 bytes
+Compression time: 2.0953099727630615 seconds
+Compressed file size: 708065 bytes
 Original file size: 1276235 bytes
-Compression Ratio: 0.5551822352466435
-Decompression time: 0.5757207870483398 seconds
+Compression Ratio: 0.5548076960747824
+Decompression time: 0.7484595775604248 seconds
 
 pride_and_prejudice.txt:
-Compression time: 0.7923359870910645 seconds
-Compressed file size: 423840 bytes
+Compression time: 1.0193815231323242 seconds
+Compressed file size: 427065 bytes
 Original file size: 772186 bytes
-Compression Ratio: 0.5488833001375316
-Decompression time: 0.3628363609313965 seconds
+Compression Ratio: 0.5530597550331138
+Decompression time: 0.45162200927734375 seconds
 
 the_brothers_karamazov.txt:
-Compression time: 3.3371663093566895 seconds
-Compressed file size: 1102867 bytes
+Compression time: 4.3539886474609375 seconds
+Compressed file size: 1102638 bytes
 Original file size: 2041798 bytes
-Compression Ratio: 0.5401450094475555
-Decompression time: 0.9065039157867432 seconds
-
-total.txt:
-Compression time: 115.58310985565186 seconds
-Compressed file size: 6930226 bytes
-Original file size: 12631049 bytes
-Compression Ratio: 0.5486659104877196
-Decompression time: 10.227568864822388 seconds
+Compression Ratio: 0.540032853396859
+Decompression time: 1.1364083290100098 seconds
 
 two_cities.txt:
-Compression time: 0.8559854030609131 seconds
-Compressed file size: 438494 bytes
+Compression time: 1.0929713249206543 seconds
+Compressed file size: 439002 bytes
 Original file size: 807231 bytes
-Compression Ratio: 0.5432075824640035
-Decompression time: 0.408280611038208 seconds
+Compression Ratio: 0.5438368942718999
+Decompression time: 0.4950287342071533 seconds
 
 ulysses.txt:
-Compression time: 2.660393714904785 seconds
-Compressed file size: 901103 bytes
+Compression time: 3.2618823051452637 seconds
+Compressed file size: 901692 bytes
 Original file size: 1586336 bytes
-Compression Ratio: 0.5680404403606802
-Decompression time: 0.7598931789398193 seconds
+Compression Ratio: 0.5684117362273818
+Decompression time: 1.0302627086639404 seconds
 
 winnie_the_pooh.txt:
-Compression time: 0.19443321228027344 seconds
-Compressed file size: 89644 bytes
+Compression time: 0.2015080451965332 seconds
+Compressed file size: 91318 bytes
 Original file size: 151960 bytes
-Compression Ratio: 0.5899183995788365
-Decompression time: 0.16803359985351562 seconds
+Compression Ratio: 0.6009344564359042
+Decompression time: 0.18604779243469238 seconds
 
 
 
 digr512:
-all_concatenated_books.txt:
-Compression time: 132.4967474937439 seconds
-Compressed file size: 18728625 bytes
-Original file size: 12631051 bytes
-Compression Ratio: 1.482744785053912
-Decompression time: 15.027237892150879 seconds
-
 anna_karenina.txt:
-Compression time: 5.102015256881714 seconds
-Compressed file size: 3035742 bytes
+Compression time: 4.639211177825928 seconds
+Compressed file size: 1131546 bytes
 Original file size: 2067704 bytes
-Compression Ratio: 1.4681704924882866
-Decompression time: 1.1058473587036133 seconds
+Compression Ratio: 0.547247575088117
+Decompression time: 1.2314386367797852 seconds
 
 don_quixote.txt:
-Compression time: 5.494456052780151 seconds
-Compressed file size: 3575355 bytes
+Compression time: 6.488453149795532 seconds
+Compressed file size: 1334628 bytes
 Original file size: 2391508 bytes
-Compression Ratio: 1.4950211331093184
-Decompression time: 1.2580487728118896 seconds
+Compression Ratio: 0.558069636396784
+Decompression time: 1.4925029277801514 seconds
 
 dorian_gray.txt:
-Compression time: 0.44920945167541504 seconds
-Compressed file size: 686115 bytes
+Compression time: 0.5423192977905273 seconds
+Compressed file size: 256982 bytes
 Original file size: 465592 bytes
-Compression Ratio: 1.4736400109967525
-Decompression time: 0.30550646781921387 seconds
+Compression Ratio: 0.5519467688448255
+Decompression time: 0.3119051456451416 seconds
 
 great_gatsby.txt:
-Compression time: 0.28996825218200684 seconds
-Compressed file size: 443355 bytes
+Compression time: 0.3126857280731201 seconds
+Compressed file size: 165965 bytes
 Original file size: 306227 bytes
-Compression Ratio: 1.4477985285425519
-Decompression time: 0.23612523078918457 seconds
+Compression Ratio: 0.5419672334575332
+Decompression time: 0.2800731658935547 seconds
 
 huckleberry_finn.txt:
-Compression time: 0.6611826419830322 seconds
-Compressed file size: 904167 bytes
+Compression time: 0.7732937335968018 seconds
+Compressed file size: 338012 bytes
 Original file size: 622257 bytes
-Compression Ratio: 1.4530443209156345
-Decompression time: 0.4251682758331299 seconds
+Compression Ratio: 0.5432032102491414
+Decompression time: 0.38977503776550293 seconds
 
 metamorphosis.txt:
-Compression time: 0.1785414218902588 seconds
-Compressed file size: 212094 bytes
+Compression time: 0.19445037841796875 seconds
+Compressed file size: 79465 bytes
 Original file size: 142017 bytes
-Compression Ratio: 1.4934409260863135
-Decompression time: 0.1630086898803711 seconds
+Compression Ratio: 0.5595456881922587
+Decompression time: 0.17761445045471191 seconds
 
 moby_dick.txt:
-Compression time: 1.9363398551940918 seconds
-Compressed file size: 1908405 bytes
+Compression time: 2.1993069648742676 seconds
+Compressed file size: 713795 bytes
 Original file size: 1276235 bytes
-Compression Ratio: 1.495339808107441
-Decompression time: 0.7867577075958252 seconds
+Compression Ratio: 0.5592974648085972
+Decompression time: 0.7142090797424316 seconds
 
 pride_and_prejudice.txt:
-Compression time: 0.9401850700378418 seconds
-Compressed file size: 1148529 bytes
+Compression time: 1.1337058544158936 seconds
+Compressed file size: 430151 bytes
 Original file size: 772186 bytes
-Compression Ratio: 1.4873735084552167
-Decompression time: 0.4662203788757324 seconds
+Compression Ratio: 0.5570562014851345
+Decompression time: 0.5207936763763428 seconds
 
 the_brothers_karamazov.txt:
-Compression time: 3.9290566444396973 seconds
-Compressed file size: 2984877 bytes
+Compression time: 5.313215017318726 seconds
+Compressed file size: 1113543 bytes
 Original file size: 2041798 bytes
-Compression Ratio: 1.4618865333397328
-Decompression time: 1.1353321075439453 seconds
-
-total.txt:
-Compression time: 120.07751870155334 seconds
-Compressed file size: 18728625 bytes
-Original file size: 12631049 bytes
-Compression Ratio: 1.4827450198316863
-Decompression time: 14.244465351104736 seconds
+Compression Ratio: 0.5453737343263143
+Decompression time: 1.5671947002410889 seconds
 
 two_cities.txt:
-Compression time: 0.9531009197235107 seconds
-Compressed file size: 1186485 bytes
+Compression time: 1.4263365268707275 seconds
+Compressed file size: 444850 bytes
 Original file size: 807231 bytes
-Compression Ratio: 1.4698209062833316
-Decompression time: 0.5089950561523438 seconds
+Compression Ratio: 0.5510814128793369
+Decompression time: 0.5737874507904053 seconds
 
 ulysses.txt:
-Compression time: 2.8234915733337402 seconds
-Compressed file size: 2408895 bytes
+Compression time: 3.8455166816711426 seconds
+Compressed file size: 899788 bytes
 Original file size: 1586336 bytes
-Compression Ratio: 1.5185276007100639
-Decompression time: 0.8550472259521484 seconds
+Compression Ratio: 0.567211486091219
+Decompression time: 1.0812394618988037 seconds
 
 winnie_the_pooh.txt:
-Compression time: 0.1928541660308838 seconds
-Compressed file size: 234606 bytes
+Compression time: 0.27609992027282715 seconds
+Compressed file size: 90483 bytes
 Original file size: 151960 bytes
-Compression Ratio: 1.543866807054488
-Decompression time: 0.18194341659545898 seconds
+Compression Ratio: 0.5954395893656226
+Decompression time: 0.19085240364074707 seconds
 
 
 
 digr1024:
-all_concatenated_books.txt:
-Compression time: 158.49393010139465 seconds
-Compressed file size: 30448175 bytes
-Original file size: 12631051 bytes
-Compression Ratio: 2.4105812730864598
-Decompression time: 11.578183650970459 seconds
-
 anna_karenina.txt:
-Compression time: 4.436046838760376 seconds
-Compressed file size: 4945140 bytes
+Compression time: 5.298774003982544 seconds
+Compressed file size: 1234607 bytes
 Original file size: 2067704 bytes
-Compression Ratio: 2.3916092438762995
-Decompression time: 1.1582484245300293 seconds
+Compression Ratio: 0.5970907828199781
+Decompression time: 1.319716453552246 seconds
 
 don_quixote.txt:
-Compression time: 6.0621161460876465 seconds
-Compressed file size: 5813435 bytes
+Compression time: 7.070818901062012 seconds
+Compressed file size: 1450174 bytes
 Original file size: 2391508 bytes
-Compression Ratio: 2.43086579681105
-Decompression time: 1.3253076076507568 seconds
+Compression Ratio: 0.6063847580689674
+Decompression time: 1.7159948348999023 seconds
 
 dorian_gray.txt:
-Compression time: 0.523707389831543 seconds
-Compressed file size: 1118355 bytes
+Compression time: 0.6280677318572998 seconds
+Compressed file size: 279455 bytes
 Original file size: 465592 bytes
-Compression Ratio: 2.402006477774532
-Decompression time: 0.30966925621032715 seconds
+Compression Ratio: 0.6002143507620405
+Decompression time: 0.34081435203552246 seconds
 
 great_gatsby.txt:
-Compression time: 0.3243367671966553 seconds
-Compressed file size: 720900 bytes
+Compression time: 0.41333770751953125 seconds
+Compressed file size: 180199 bytes
 Original file size: 306227 bytes
-Compression Ratio: 2.3541359840902336
-Decompression time: 0.2308356761932373 seconds
+Compression Ratio: 0.5884490916868859
+Decompression time: 0.29602622985839844 seconds
 
 huckleberry_finn.txt:
-Compression time: 0.7292258739471436 seconds
-Compressed file size: 1467635 bytes
+Compression time: 0.8530867099761963 seconds
+Compressed file size: 366819 bytes
 Original file size: 622257 bytes
-Compression Ratio: 2.35856728007881
-Decompression time: 0.37589573860168457 seconds
+Compression Ratio: 0.5894975870098689
+Decompression time: 0.4568467140197754 seconds
 
 metamorphosis.txt:
-Compression time: 0.1938486099243164 seconds
-Compressed file size: 346450 bytes
+Compression time: 0.208601713180542 seconds
+Compressed file size: 86680 bytes
 Original file size: 142017 bytes
-Compression Ratio: 2.4394966799749325
-Decompression time: 0.1637117862701416 seconds
+Compression Ratio: 0.6103494652048699
+Decompression time: 0.17574715614318848 seconds
 
 moby_dick.txt:
-Compression time: 2.0453062057495117 seconds
-Compressed file size: 3097860 bytes
+Compression time: 2.567387819290161 seconds
+Compressed file size: 774109 bytes
 Original file size: 1276235 bytes
-Compression Ratio: 2.4273429266553572
-Decompression time: 0.6887693405151367 seconds
+Compression Ratio: 0.6065567861718257
+Decompression time: 0.8007907867431641 seconds
 
 pride_and_prejudice.txt:
-Compression time: 1.0342292785644531 seconds
-Compressed file size: 1873670 bytes
+Compression time: 1.2019386291503906 seconds
+Compressed file size: 467234 bytes
 Original file size: 772186 bytes
-Compression Ratio: 2.4264490679706703
-Decompression time: 0.5259225368499756 seconds
+Compression Ratio: 0.605079605172847
+Decompression time: 0.4895777702331543 seconds
 
 the_brothers_karamazov.txt:
-Compression time: 4.753438234329224 seconds
-Compressed file size: 4869355 bytes
+Compression time: 5.13587498664856 seconds
+Compressed file size: 1214725 bytes
 Original file size: 2041798 bytes
-Compression Ratio: 2.3848367958044823
-Decompression time: 1.1517248153686523 seconds
-
-total.txt:
-Compression time: 141.94414114952087 seconds
-Compressed file size: 30448175 bytes
-Original file size: 12631049 bytes
-Compression Ratio: 2.4105816547778414
-Decompression time: 10.660717964172363 seconds
+Compression Ratio: 0.5949290772152779
+Decompression time: 1.238915205001831 seconds
 
 two_cities.txt:
-Compression time: 1.0522513389587402 seconds
-Compressed file size: 1935540 bytes
+Compression time: 1.4041430950164795 seconds
+Compressed file size: 484122 bytes
 Original file size: 807231 bytes
-Compression Ratio: 2.397752316251482
-Decompression time: 0.48338747024536133 seconds
+Compression Ratio: 0.5997316753197041
+Decompression time: 0.5139880180358887 seconds
 
 ulysses.txt:
-Compression time: 3.01552152633667 seconds
-Compressed file size: 3886615 bytes
+Compression time: 3.506394624710083 seconds
+Compressed file size: 966964 bytes
 Original file size: 1586336 bytes
-Compression Ratio: 2.4500578692029937
-Decompression time: 0.8765933513641357 seconds
+Compression Ratio: 0.6095581263994513
+Decompression time: 0.9171993732452393 seconds
 
 winnie_the_pooh.txt:
-Compression time: 0.20312786102294922 seconds
-Compressed file size: 373220 bytes
+Compression time: 0.22503304481506348 seconds
+Compressed file size: 94238 bytes
 Original file size: 151960 bytes
-Compression Ratio: 2.456041063437747
-Decompression time: 0.18540143966674805 seconds
+Compression Ratio: 0.6201500394840748
+Decompression time: 0.19624829292297363 seconds
 
 
 
 Z:
-all_concatenated_books.txt:
-Compression time: 79.21334171295166 seconds
-Compressed file size: 5469534 bytes
-Original file size: 12631051 bytes
-Compression Ratio: 0.4330228735518525
-Decompression time: 9.190276622772217 seconds
-
 anna_karenina.txt:
-Compression time: 3.22342848777771 seconds
-Compressed file size: 860125 bytes
+Compression time: 4.421751260757446 seconds
+Compressed file size: 860131 bytes
 Original file size: 2067704 bytes
-Compression Ratio: 0.41598072064473446
-Decompression time: 0.9870429039001465 seconds
+Compression Ratio: 0.4159836224140399
+Decompression time: 1.297071933746338 seconds
 
 don_quixote.txt:
-Compression time: 4.046597242355347 seconds
-Compressed file size: 1011620 bytes
+Compression time: 5.9506871700286865 seconds
+Compressed file size: 1011622 bytes
 Original file size: 2391508 bytes
-Compression Ratio: 0.423005066259448
-Decompression time: 1.1162595748901367 seconds
+Compression Ratio: 0.42300590255186266
+Decompression time: 1.5917377471923828 seconds
 
 dorian_gray.txt:
-Compression time: 0.696434497833252 seconds
+Compression time: 0.905836820602417 seconds
 Compressed file size: 280483 bytes
 Original file size: 465592 bytes
 Compression Ratio: 0.6024222924792523
-Decompression time: 0.3645899295806885 seconds
+Decompression time: 0.5313248634338379 seconds
 
 great_gatsby.txt:
-Compression time: 0.42287302017211914 seconds
-Compressed file size: 197686 bytes
+Compression time: 0.5626993179321289 seconds
+Compressed file size: 197604 bytes
 Original file size: 306227 bytes
-Compression Ratio: 0.6455537885294242
-Decompression time: 0.30028295516967773 seconds
+Compression Ratio: 0.6452860133169185
+Decompression time: 0.390545129776001 seconds
 
 huckleberry_finn.txt:
-Compression time: 0.8103783130645752 seconds
+Compression time: 1.086423635482788 seconds
 Compressed file size: 332421 bytes
 Original file size: 622257 bytes
 Compression Ratio: 0.5342181767340504
-Decompression time: 0.4395308494567871 seconds
+Decompression time: 0.5400598049163818 seconds
 
 metamorphosis.txt:
-Compression time: 0.21818828582763672 seconds
-Compressed file size: 92954 bytes
+Compression time: 0.26133060455322266 seconds
+Compressed file size: 92955 bytes
 Original file size: 142017 bytes
-Compression Ratio: 0.6545272749037087
-Decompression time: 0.18198251724243164 seconds
+Compression Ratio: 0.6545343163142441
+Decompression time: 0.23702669143676758 seconds
 
 moby_dick.txt:
-Compression time: 1.8990509510040283 seconds
-Compressed file size: 617121 bytes
+Compression time: 2.6419475078582764 seconds
+Compressed file size: 617127 bytes
 Original file size: 1276235 bytes
-Compression Ratio: 0.4835480926318429
-Decompression time: 0.7064805030822754 seconds
+Compression Ratio: 0.48355279396035994
+Decompression time: 1.0878281593322754 seconds
 
 pride_and_prejudice.txt:
-Compression time: 0.9847681522369385 seconds
+Compression time: 1.4433128833770752 seconds
 Compressed file size: 385012 bytes
 Original file size: 772186 bytes
 Compression Ratio: 0.4986000782194963
-Decompression time: 0.4470813274383545 seconds
+Decompression time: 0.604285478591919 seconds
 
 the_brothers_karamazov.txt:
-Compression time: 3.1845269203186035 seconds
+Compression time: 4.490280389785767 seconds
 Compressed file size: 866141 bytes
 Original file size: 2041798 bytes
 Compression Ratio: 0.4242050388921921
-Decompression time: 0.9732882976531982 seconds
-
-total.txt:
-Compression time: 80.97112941741943 seconds
-Compressed file size: 5469532 bytes
-Original file size: 12631049 bytes
-Compression Ratio: 0.4330227837767077
-Decompression time: 9.016170501708984 seconds
+Decompression time: 1.199836015701294 seconds
 
 two_cities.txt:
-Compression time: 1.0596823692321777 seconds
-Compressed file size: 410663 bytes
+Compression time: 1.431079626083374 seconds
+Compressed file size: 410664 bytes
 Original file size: 807231 bytes
-Compression Ratio: 0.5087304625317908
-Decompression time: 0.4655892848968506 seconds
+Compression Ratio: 0.5087317013345622
+Decompression time: 0.6020340919494629 seconds
 
 ulysses.txt:
-Compression time: 2.714801549911499 seconds
-Compressed file size: 796712 bytes
+Compression time: 3.5296928882598877 seconds
+Compressed file size: 796714 bytes
 Original file size: 1586336 bytes
-Compression Ratio: 0.5022340790349585
-Decompression time: 0.8189656734466553 seconds
+Compression Ratio: 0.5022353398019083
+Decompression time: 1.069951057434082 seconds
 
 winnie_the_pooh.txt:
-Compression time: 0.2124013900756836 seconds
-Compressed file size: 100506 bytes
+Compression time: 0.26592183113098145 seconds
+Compressed file size: 100508 bytes
 Original file size: 151960 bytes
-Compression Ratio: 0.6613977362463807
-Decompression time: 0.19552993774414062 seconds
+Compression Ratio: 0.6614108976046328
+Decompression time: 0.25980424880981445 seconds
 
 
 
-huff:
-all_concatenated_books.txt:
-Compression time: 161.4142427444458 seconds
-Original file size (in terms of bytes): 12631051
-Compressed file size (in terms of bytes): 6797478
-Compression Ratio: 1.8581966723540702
-Decompression time: 26.58134961128235 seconds
-
-anna_karenina.txt:
-Compression time: 1.5691049098968506 seconds
-Original file size (in terms of bytes): 2067704
-Compressed file size (in terms of bytes): 1092803
-Compression Ratio: 1.89211047187828
-Decompression time: 3.356959104537964 seconds
-
-don_quixote.txt:
-Compression time: 3.3140039443969727 seconds
-Original file size (in terms of bytes): 2391508
-Compressed file size (in terms of bytes): 1285861
-Compression Ratio: 1.859849548279324
-Decompression time: 4.321680068969727 seconds
-
-dorian_gray.txt:
-Compression time: 0.36312317848205566 seconds
-Original file size (in terms of bytes): 465592
-Compressed file size (in terms of bytes): 249607
-Compression Ratio: 1.865300251996138
-Decompression time: 0.8617391586303711 seconds
-
-great_gatsby.txt:
-Compression time: 0.2860875129699707 seconds
-Original file size (in terms of bytes): 306227
-Compressed file size (in terms of bytes): 161429
-Compression Ratio: 1.8969763797087265
-Decompression time: 0.5887775421142578 seconds
-
-huckleberry_finn.txt:
-Compression time: 0.43276190757751465 seconds
-Original file size (in terms of bytes): 622257
-Compressed file size (in terms of bytes): 325733
-Compression Ratio: 1.9103283977981966
-Decompression time: 1.2521300315856934 seconds
-
-metamorphosis.txt:
-Compression time: 0.21879076957702637 seconds
-Original file size (in terms of bytes): 142017
-Compressed file size (in terms of bytes): 76178
-Compression Ratio: 1.8642784005880964
-Decompression time: 0.3881199359893799 seconds
-
-moby_dick.txt:
-Compression time: 0.7717673778533936 seconds
-Original file size (in terms of bytes): 1276235
-Compressed file size (in terms of bytes): 689885
-Compression Ratio: 1.849924262739442
-Decompression time: 2.067862033843994 seconds
-
-pride_and_prejudice.txt:
-Compression time: 0.5130665302276611 seconds
-Original file size (in terms of bytes): 772186
-Compressed file size (in terms of bytes): 416847
-Compression Ratio: 1.8524446619503079
-Decompression time: 1.2787981033325195 seconds
-
-the_brothers_karamazov.txt:
-Compression time: 1.4715497493743896 seconds
-Original file size (in terms of bytes): 2041798
-Compressed file size (in terms of bytes): 1079653
-Compression Ratio: 1.8911613268337142
-Decompression time: 3.1250226497650146 seconds
-
-total.txt:
-Compression time: 160.98463010787964 seconds
-Original file size (in terms of bytes): 12631052
-Compressed file size (in terms of bytes): 6797478
-Compression Ratio: 1.8581968194674554
-Decompression time: 24.702547550201416 seconds
-
-two_cities.txt:
-Compression time: 0.6318073272705078 seconds
-Original file size (in terms of bytes): 807231
-Compressed file size (in terms of bytes): 431286
-Compression Ratio: 1.8716837550952268
-Decompression time: 1.326481580734253 seconds
-
-ulysses.txt:
-Compression time: 1.061436653137207 seconds
-Original file size (in terms of bytes): 1586336
-Compressed file size (in terms of bytes): 882759
-Compression Ratio: 1.7970204778427634
-Decompression time: 3.616225242614746 seconds
-
-winnie_the_pooh.txt:
-Compression time: 0.22158169746398926 seconds
-Original file size (in terms of bytes): 151960
-Compressed file size (in terms of bytes): 87110
-Compression Ratio: 1.7444610262886007
-Decompression time: 0.4252798557281494 seconds
-
-
-
-
-digr256:
-all_concatenated_books.txt:
-Compression time: 164.06885862350464 seconds
-Original file size (in terms of bytes): 12631051
-Compressed file size (in terms of bytes): 6925422
-Compression Ratio: 1.8238673397808827
-Decompression time: 11.049530267715454 seconds
-
-anna_karenina.txt:
