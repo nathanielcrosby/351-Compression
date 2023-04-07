@@ -1,7 +1,21 @@
 import pickle
 import sys
 
+utf_chars = {'‐':'-' ,"’":"'" , "‘":"'" , '”':'"' , '“':'"' , '—':'-', 'ñ':'n', 'é':'e', 'Á':'A', 'à': 'a', 'è':'e', 'ü':'u', 'á':'a', 'ê':'e', 'ä':'a', 
+             'ó': 'o', 'û':'u', 'ú':'u', 'Ñ':'N', 'â':'a', 'À':'A', 'ï':'i', 'ô':'o', 'Ú':'U', 'í':'i', 'æ':'a', 'œ':'o', 'Æ':'A', 'î':'i', 'ç':'c', 'ë':'e', 
+             'ù':'u', 'É':'E', 'Ç':'C', 'Ü':'U', 'È':'E', 'ö':'o', 'ā':'a', 'ò':'o', 'ο':'o'}
+
 def encode(code, data):
+    clean_data = ""
+    for ch in data:
+        if code.get(ch) is not None:
+            clean_data += ch
+        elif utf_chars.get(ch) is not None:
+            clean_data += utf_chars[ch]
+        else:
+            clean_data += '?'
+    data = clean_data
+
     value = ""
     i = 0
     while i < len(data):

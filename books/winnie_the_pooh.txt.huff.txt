@@ -1,4 +1,4 @@
-The Project Gutenberg eBook of Winnie-the-Pooh, by A. A. Milne
+?The Project Gutenberg eBook of Winnie-the-Pooh, by A. A. Milne
 
 This eBook is for the use of anyone anywhere in the United States and
 most other parts of the world at no cost and with almost no restrictions
@@ -2839,7 +2839,7 @@ They went back to the others. Piglet was lying on his back, sleeping
 peacefully. Roo was washing his face and paws in the stream, while Kanga
 explained to everybody proudly that this was the first time he had ever
 washed his face himself, and Owl was telling Kanga an Interesting
-Anecdote full of long words like Encyclopdia and Rhododendron to which
+Anecdote full of long words like Encyclopadia and Rhododendron to which
 Kanga wasn't listening.
 
 "I don't hold with all this washing," grumbled Eeyore. "This modern
@@ -4000,4 +4000,3 @@ This website includes information about Project Gutenberg-tm,
 including how to make donations to the Project Gutenberg Literary
 Archive Foundation, how to help produce our new eBooks, and how to
 subscribe to our email newsletter to hear about new eBooks.
-o

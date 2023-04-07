@@ -3,12 +3,16 @@ import sys
 
 ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!"#$%&()*+,-./:;<>=?@[]\^_`}{|~ ' + "'" + "\n" + "\t"
 
+utf_chars = {'‐':'-' ,"’":"'" , "‘":"'" , '”':'"' , '“':'"' , '—':'-', 'ñ':'n', 'é':'e', 'Á':'A', 'à': 'a', 'è':'e', 'ü':'u', 'á':'a', 'ê':'e', 'ä':'a', 
+             'ó': 'o', 'û':'u', 'ú':'u', 'Ñ':'N', 'â':'a', 'À':'A', 'ï':'i', 'ô':'o', 'Ú':'U', 'í':'i', 'æ':'a', 'œ':'o', 'Æ':'A', 'î':'i', 'ç':'c', 'ë':'e', 
+             'ù':'u', 'É':'E', 'Ç':'C', 'Ü':'U', 'È':'E', 'ö':'o', 'ā':'a', 'ò':'o', 'ο':'o'}
+
 def encode(data):
     codes = {}
     counter = 0
     len_code = 9
-    for char in ascii_printable:
-        codes[char] = str(format(counter, 'b')).zfill(len_code)
+    for ch in ascii_printable:
+        codes[ch] = str(format(counter, 'b')).zfill(len_code)
         counter += 1
 
     ascii = codes.copy()
@@ -17,6 +21,10 @@ def encode(data):
     for ch in data:
         if codes.get(ch) is not None:
             clean_data += ch
+        elif utf_chars.get(ch) is not None:
+            clean_data += utf_chars[ch]
+        else:
+            clean_data += '?'
     data = clean_data
 
     value = ""
@@ -35,7 +43,7 @@ def encode(data):
             value += codes[data[j]].zfill(len_code)
             codes[data[i:j+1]] = str(format(counter, 'b')).zfill(len_code)
 
-            comp_ratio = 0.001 * ((2 * len_code) / (8*len(data[i:j+1]))) + (0.999 * comp_ratio)
+            comp_ratio = len(value) / (8*(j+1))
 
             if '0' not in str(format(counter, 'b')).zfill(len_code) and (len_code < 16):
                 len_code += 1
@@ -44,7 +52,7 @@ def encode(data):
             i = j + 1
 
         else:
-            comp_ratio = 0.001 * ((len_code) / (8*len(data[i:j]))) + (0.999 * comp_ratio)
+            comp_ratio = len(value) / (8*(j))
             i=j
             
             if (comp_ratio > 0.8):

@@ -3,7 +3,9 @@ import sys
 import math
 
 ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!"#$%&()*+,-./:;<>=?@[]\^_`}{|~ ' + "'" + "\n" + "\t"
-
+utf_chars = {'‐':'-' ,"’":"'" , "‘":"'" , '”':'"' , '“':'"' , '—':'-', 'ñ':'n', 'é':'e', 'Á':'A', 'à': 'a', 'è':'e', 'ü':'u', 'á':'a', 'ê':'e', 'ä':'a', 
+             'ó': 'o', 'û':'u', 'ú':'u', 'Ñ':'N', 'â':'a', 'À':'A', 'ï':'i', 'ô':'o', 'Ú':'U', 'í':'i', 'æ':'a', 'œ':'o', 'Æ':'A', 'î':'i', 'ç':'c', 'ë':'e', 
+             'ù':'u', 'É':'E', 'Ç':'C', 'Ü':'U', 'È':'E', 'ö':'o', 'ā':'a', 'ò':'o', 'ο':'o'}
 
 def read_text(files):
     all_text = ""
@@ -19,21 +21,27 @@ def read_text(files):
 
 def find_digrams(text):
     ascii = {}
-    for char in ascii_printable:
-        ascii[char] = 0
+    for ch in ascii_printable:
+        ascii[ch] = ch
 
     digram_count = {}
-    count = 0
+
     for i in range(len(text) - 1):
-        if (ascii.get(text[i]) is not None) and (ascii.get(text[i+1]) is not None):
-            if digram_count.get(text[i:i+2]) is None:
-                digram_count[text[i:i+2]] = 1
+        left = ascii.get(text[i])
+        right = ascii.get(text[i+1])
+        if (left is None):
+            left = utf_chars.get(text[i])
+        if (right is None):
+            right = utf_chars.get(text[i+1])
+
+        if (left is not None) and (right is not None):
+            if digram_count.get(left+right) is None:
+                digram_count[left+right] = 1
             else:
-                digram_count[text[i:i+2]] += 1
-            count += 1
+                digram_count[left+right] += 1
+
 
     sorted_digrams = dict_sort(digram_count)
-
     sorted_digrams.reverse()
 
     return sorted_digrams

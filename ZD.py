@@ -35,7 +35,7 @@ def decode(data):
 
             codes[str(format(counter, 'b')).zfill(len_code)] = left + right
 
-            comp_ratio = 0.001 * ((2 * len_code) / (8*len(left+right))) + (0.999 * comp_ratio)
+            comp_ratio = i / (8*len(message))
 
             if ('0' not in str(format(counter, 'b')).zfill(len_code)) and (len_code < 16):
                 len_code += 1
@@ -44,7 +44,7 @@ def decode(data):
             counter += 1
 
         else:
-            comp_ratio = 0.001 * ((len_code) / (8*len(left))) + (0.999 * comp_ratio)
+            comp_ratio = i / (8*len(message))
 
             if (comp_ratio > 0.8):
                 codes = ascii.copy()

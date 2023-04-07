@@ -6,7 +6,7 @@ from tabulate import tabulate
 def filter_dir(dir_list):
     new_list = []
     for file in dir_list:
-        if not ("all_concatenated_books" in file or  "total" in file or "Z" in file or "huff" in file or "digr" in file):
+        if not ("total" in file or "Z" in file or "huff" in file or "digr" in file):
             new_list.append(file)
     return new_list 
 

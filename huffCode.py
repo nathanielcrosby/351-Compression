@@ -1,8 +1,10 @@
 import pickle
 import sys
 
-ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!"#$%&()*+,-./:;<>=?@[]\^_`}{|~ ' + "'" + "\n" + "\t"
-
+ascii_printable = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!"#$%&()*+,-./:;<>=?@[]\^_`}{|~ ' + "'" + "\n" + "\t" 
+utf_chars = {'‐':'-' ,"’":"'" , "‘":"'" , '”':'"' , '“':'"' , '—':'-', 'ñ':'n', 'é':'e', 'Á':'A', 'à': 'a', 'è':'e', 'ü':'u', 'á':'a', 'ê':'e', 'ä':'a', 
+             'ó': 'o', 'û':'u', 'ú':'u', 'Ñ':'N', 'â':'a', 'À':'A', 'ï':'i', 'ô':'o', 'Ú':'U', 'í':'i', 'æ':'a', 'œ':'o', 'Æ':'A', 'î':'i', 'ç':'c', 'ë':'e', 
+             'ù':'u', 'É':'E', 'Ç':'C', 'Ü':'U', 'È':'E', 'ö':'o', 'ā':'a', 'ò':'o', 'ο':'o'}
 
 def read_text(files):
     all_text = ""
@@ -21,10 +23,14 @@ def find_freq(text):
     for char in ascii_printable:
         counts[char] = 0
 
-    for char in text:
-        if(counts.get(char) is not None):
-            counts[char] += 1
+    for ch in text:
+        if(counts.get(ch) is not None):
+            counts[ch] += 1
             total += 1
+        elif(utf_chars.get(ch) is not None):
+            counts[utf_chars[ch]] += 1
+        else:
+            counts['?'] += 1
 
     final_count = {}
     for key in list(counts.keys()):
