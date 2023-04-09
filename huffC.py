@@ -6,16 +6,16 @@ utf_chars = {'‐':'-' ,"’":"'" , "‘":"'" , '”':'"' , '“':'"' , '—':'-
              'ù':'u', 'É':'E', 'Ç':'C', 'Ü':'U', 'È':'E', 'ö':'o', 'ā':'a', 'ò':'o', 'ο':'o'}
 
 def encode(code, data):
-    value = ""
+    value = []
     for ch in data:
         if code.get(ch) is not None:
-            value += code[ch]
+            value.append(code[ch])
         elif(utf_chars.get(ch) is not None):
-            value += code[utf_chars[ch]]
+            value.append(code[utf_chars[ch]])
         else:
-            value += code['?']
+            value.append(code['?'])
 
-    return value
+    return "".join(value)
 
 
 def str_to_list(value):

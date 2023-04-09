@@ -17,17 +17,18 @@ def encode(data):
 
     ascii = codes.copy()
 
-    clean_data = ""
+    clean_data = []
     for ch in data:
         if codes.get(ch) is not None:
-            clean_data += ch
+            clean_data.append(ch)
         elif utf_chars.get(ch) is not None:
-            clean_data += utf_chars[ch]
+            clean_data.append(utf_chars[ch])
         else:
-            clean_data += '?'
-    data = clean_data
+            clean_data.append('?')
+    data = "".join(clean_data)
 
-    value = ""
+    value = []
+    len_val = 0
     comp_ratio = 1
 
     i = 0
@@ -37,13 +38,15 @@ def encode(data):
         while (j < len(data)) and (codes.get(data[i:j+1]) is not None):
             j += 1
         
-        value += codes[data[i:j]].zfill(len_code) 
+        value.append(codes[data[i:j]].zfill(len_code)) 
+        len_val += len(codes[data[i:j]].zfill(len_code))
         
         if (counter < 2**16) and (j < len(data)):
-            value += codes[data[j]].zfill(len_code)
+            value.append(codes[data[j]].zfill(len_code))
+            len_val += len(codes[data[j]].zfill(len_code))
             codes[data[i:j+1]] = str(format(counter, 'b')).zfill(len_code)
 
-            comp_ratio = len(value) / (8*(j+1))
+            comp_ratio = len_val / (8*(j+1))
 
             if '0' not in str(format(counter, 'b')).zfill(len_code) and (len_code < 16):
                 len_code += 1
@@ -52,7 +55,7 @@ def encode(data):
             i = j + 1
 
         else:
-            comp_ratio = len(value) / (8*(j))
+            comp_ratio = len_val / (8*(j))
             i=j
             
             if (comp_ratio > 0.8):
@@ -60,7 +63,7 @@ def encode(data):
                 counter = len(ascii_printable)
                 len_code = 9
 
-    return value
+    return "".join(value)
 
 
 def str_to_list(value):

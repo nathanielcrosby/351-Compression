@@ -10,7 +10,8 @@ def longer_codes(codes, len_code):
 
 
 def decode(data):
-    message = ""
+    message = []
+    len_mess = 0
     codes = {}
     counter = 0
     len_code = 9
@@ -25,17 +26,19 @@ def decode(data):
     i = 0
     while i < (len(data) - len_code):
         left = codes[data[i:i+len_code]]
-        message += left
+        message.append(left)
+        len_mess += len(left)
         i += len_code
 
         if (i + len_code) <= len(data) and (counter < 2**16):
             right = codes[data[i:i+len_code]]
-            message += right
+            message.append(right)
+            len_mess += len(right)
             i += len_code
 
             codes[str(format(counter, 'b')).zfill(len_code)] = left + right
 
-            comp_ratio = i / (8*len(message))
+            comp_ratio = i / (8*len_mess)
 
             if ('0' not in str(format(counter, 'b')).zfill(len_code)) and (len_code < 16):
                 len_code += 1
@@ -44,14 +47,14 @@ def decode(data):
             counter += 1
 
         else:
-            comp_ratio = i / (8*len(message))
+            comp_ratio = i / (8*len_mess)
 
             if (comp_ratio > 0.8):
                 codes = ascii.copy()
                 counter = len(ascii_printable)
                 len_code = 9
 
-    return message
+    return "".join(message)
 
 
 if __name__ == '__main__':

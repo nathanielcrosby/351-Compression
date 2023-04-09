@@ -3,15 +3,15 @@ import sys
 
 def decode(code, data):
     i, j = 0, 1
-    message = ""
+    message = []
     while j <= len(data):
         sub = data[i:j]
         if (code.get(sub) is not None):
-            message += code[sub]
+            message.append(code[sub])
             i = j
         j += 1
 
-    return message
+    return "".join(message)
 
 if __name__ == '__main__':
     if(len(sys.argv) != 2):

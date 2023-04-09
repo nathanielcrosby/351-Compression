@@ -2,11 +2,11 @@ import pickle
 import sys
 
 def decode(code, data):
-    message = ""
+    message = []
     for i in range(0, len(data)-9, 10):
-        message += code[data[i:i+10]]
+        message.append(code[data[i:i+10]])
 
-    return message
+    return "".join(message)
 
 if __name__ == '__main__':
     if(len(sys.argv) != 2):

@@ -6,32 +6,32 @@ utf_chars = {'‐':'-' ,"’":"'" , "‘":"'" , '”':'"' , '“':'"' , '—':'-
              'ù':'u', 'É':'E', 'Ç':'C', 'Ü':'U', 'È':'E', 'ö':'o', 'ā':'a', 'ò':'o', 'ο':'o'}
 
 def encode(code, data):
-    clean_data = ""
+    clean_data = []
     for ch in data:
         if code.get(ch) is not None:
-            clean_data += ch
+            clean_data.append(ch)
         elif utf_chars.get(ch) is not None:
-            clean_data += utf_chars[ch]
+            clean_data.append(utf_chars[ch])
         else:
-            clean_data += '?'
-    data = clean_data
+            clean_data.append('?')
+    data = "".join(clean_data)
 
-    value = ""
+    value = []
     i = 0
     while i < len(data):
         if (i == (len(data) - 1)) and (code.get(data[i]) is not None):
-            value += code[data[i]]
+            value.append(code[data[i]])
             i += 1
         elif code.get(data[i:i+2]) is not None:
-            value += code[data[i:i+2]]
+            value.append(code[data[i:i+2]])
             i += 2
         elif code.get(data[i]) is not None:
-            value += code[data[i]]
+            value.append(code[data[i]])
             i += 1
         else:
             i += 1
 
-    return value
+    return "".join(value)
 
 def str_to_list(value):
     vals = []
