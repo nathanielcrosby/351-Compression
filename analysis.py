@@ -101,14 +101,14 @@ def write_data_in_latex(filename):
             start_time = time.time()
             os.system(cmd)
             end_time=time.time()
-            compression_time=str(end_time - start_time)
+            compression_time=str(round(end_time - start_time, 5))
 
             compression_time_row.append(compression_time)
 
 
             compressed_file_size = os.path.getsize(book + '.' + algorithm)
             original_file_size = os.path.getsize(book)
-            compression_ratio = float(compressed_file_size)/original_file_size
+            compression_ratio = str(round(float(compressed_file_size)/original_file_size, 5))
 
             compression_ratio_row.append(compression_ratio)
 
@@ -116,7 +116,7 @@ def write_data_in_latex(filename):
             start_time = time.time()
             os.system(cmd)
             end_time=time.time()
-            decompression_time=str(end_time - start_time)
+            decompression_time=str(round(end_time - start_time,5))
 
             decompression_time_row.append(decompression_time)
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
             data = my_file.read()
         except FileNotFoundError:
             print("No file found with name: ", filename)
-            print("Ensure correct arguments. Input: python anaylsis.py filename")
+            print("Ensure correct arguments. Input: python analysis.py filename")
         
         # write_data_to_file(filename)
         write_data_in_latex(filename)
